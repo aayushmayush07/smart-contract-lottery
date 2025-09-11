@@ -149,7 +149,7 @@ contract Raffle is VRFConsumerBaseV2Plus {
         s_vrfCoordinator.requestRandomWords(request);
     }
 
-    // Getter functions (receive)
+    // Getter functions (receive) //callback
 
     function fulfillRandomWords(
         uint256 requestId,
